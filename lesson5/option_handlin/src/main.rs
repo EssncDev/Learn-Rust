@@ -12,7 +12,6 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 }
 
 fn dice_rool_even(number: u8) -> bool {
-    println!("result: {}", number % 2);
     match number % 2 {
         0 => true,
         1 => false,
@@ -30,7 +29,11 @@ fn main() {
 
     for i in 1..=6 {
         let result: bool = dice_rool_even(i);
-        println!("dice roll even? {}", result)
+        if (result == true) {
+            println!("dice roll for {}: even!", i);
+        } else {
+            println!("dice roll for {}: odd", i);
+        }
     }
     
 }
