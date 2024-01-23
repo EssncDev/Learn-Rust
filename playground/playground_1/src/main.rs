@@ -19,7 +19,7 @@ fn get_input() -> String {
 }
 
 fn get_random_numb() -> u8 {
-    let numb = rand::thread_rng().gen_range(0..255) as u8; 
+    let numb = rand::thread_rng().gen_range(128..255) as u8; 
 
     numb
 }
